@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  mediabot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/usr/src/app:ro
